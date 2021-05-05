@@ -48,32 +48,5 @@ function myFunction() {
 </form>
 <br>
 
-<center>
-    <button class=biru onclick="tukar_warna(0)">Biru</button>
-    <button class=hijau onclick="tukar_warna(1)">Hijau</button>
-    <button class=merah onclick="tukar_warna(2)">Merah</button>
-    <button class=hitam onclick="tukar_warna(3)">Hitam</button>
-<script>
-    function semak() {
-
-        var IDPelajar = document.getElementById("IDPelajar").value;
-
-        if (IDPelajar.lenght == 0)
-            alert("Sila isi IDPelajar");
-        else if (IDPelajar.lenght > 4)
-            alert("IDPelajar tidak boleh melebihi 4 aksara"); 
-    }
-    function tukar_warna(n){
-
-        var warna = ["Blue","Green","Red","Black"];
-        var teks = document.getElementByClassName('warna');
-        for (var i = 0; i < teks.length; i++) 
-            teks[i].style.color = warna[n];
-        
-    }
-
-</script>
-
-</center>
 </body>
 </html>

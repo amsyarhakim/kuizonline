@@ -18,10 +18,10 @@ include("sambungan.php");
 $sql = 'select * from pelajar ';
 $hasil = mysqli_query($sambungan, $sql);
 while($pelajar = mysqli_fetch_array($hasil)) {
-echo '<tr><td>'.$pelajar["IDPelajar"].'</td>
-<td>'.$pelajar["Nama_Pelajar"].'</td>
-<td>'.$pelajar["IDKelas"].'</td>
-<td>'.$pelajar["KataLaluan"].'</td>
+echo '<tr><td>'.$pelajar["idpelajar"].'</td>
+<td>'.$pelajar["namapelajar"].'</td>
+<td>'.$pelajar["idkelas"].'</td>
+<td>'.$pelajar["PASSWORD"].'</td>
 
 </tr>';    
 }
